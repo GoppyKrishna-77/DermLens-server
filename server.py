@@ -16,6 +16,9 @@ def random_filename():
 
 app = Flask(__name__)
 
+@app.route("/skin-disease", methods=["GET"])
+def welcome():
+    return "Welcome to DermLens Sever"
 
 @app.route("/skin-disease", methods=["POST"])
 def skinDisease():
